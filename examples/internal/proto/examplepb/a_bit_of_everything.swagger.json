@@ -238,7 +238,8 @@
             "name": "uuid",
             "in": "query",
             "required": false,
-            "type": "string"
+            "type": "string",
+            "x-internal": true
           },
           {
             "name": "floatValue",
@@ -579,7 +580,8 @@
             "name": "uuid",
             "in": "query",
             "required": false,
-            "type": "string"
+            "type": "string",
+            "x-internal": true
           },
           {
             "name": "floatValue",
@@ -913,7 +915,8 @@
             "name": "uuid",
             "in": "query",
             "required": false,
-            "type": "string"
+            "type": "string",
+            "x-internal": true
           },
           {
             "name": "floatValue",
@@ -1234,7 +1237,8 @@
             "name": "uuid",
             "in": "path",
             "required": true,
-            "type": "string"
+            "type": "string",
+            "x-internal": true
           },
           {
             "name": "singleNested.name",
@@ -1766,7 +1770,8 @@
             "name": "uuid",
             "in": "query",
             "required": false,
-            "type": "string"
+            "type": "string",
+            "x-internal": true
           },
           {
             "name": "bytesValue",
@@ -2055,7 +2060,8 @@
             "name": "uuid",
             "in": "path",
             "required": true,
-            "type": "string"
+            "type": "string",
+            "x-internal": true
           },
           {
             "name": "body",
@@ -2258,7 +2264,8 @@
                 "doubleValue",
                 "floatValue",
                 "requiredStringViaFieldBehaviorAnnotation"
-              ]
+              ],
+              "x-a-bit-of-everything-foo": "bar"
             }
           }
         ],
@@ -2808,7 +2815,8 @@
             "name": "abe.uuid",
             "in": "path",
             "required": true,
-            "type": "string"
+            "type": "string",
+            "x-internal": true
           },
           {
             "name": "body",
@@ -2874,7 +2882,8 @@
             "name": "abe.uuid",
             "in": "path",
             "required": true,
-            "type": "string"
+            "type": "string",
+            "x-internal": true
           },
           {
             "name": "body",
@@ -3442,7 +3451,8 @@
             "name": "abe.uuid",
             "in": "path",
             "required": true,
-            "type": "string"
+            "type": "string",
+            "x-internal": true
           },
           {
             "name": "body",
@@ -3568,7 +3578,8 @@
         "uuid": {
           "type": "string",
           "minLength": 1,
-          "pattern": "[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}"
+          "pattern": "[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}",
+          "x-internal": true
         },
         "nested": {
           "type": "array",
@@ -3758,7 +3769,8 @@
         "doubleValue",
         "floatValue",
         "requiredStringViaFieldBehaviorAnnotation"
-      ]
+      ],
+      "x-a-bit-of-everything-foo": "bar"
     },
     "examplepbABitOfEverythingRepeated": {
       "type": "object",

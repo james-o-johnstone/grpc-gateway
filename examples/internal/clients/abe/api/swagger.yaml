@@ -158,6 +158,7 @@ paths:
         in: "query"
         required: false
         type: "string"
+        x-internal: true
         x-exportParamName: "Uuid"
         x-optionalDataType: "String"
       - name: "floatValue"
@@ -470,6 +471,7 @@ paths:
         in: "query"
         required: false
         type: "string"
+        x-internal: true
         x-exportParamName: "Uuid"
         x-optionalDataType: "String"
       - name: "floatValue"
@@ -773,6 +775,7 @@ paths:
         in: "query"
         required: false
         type: "string"
+        x-internal: true
         x-exportParamName: "Uuid"
         x-optionalDataType: "String"
       - name: "floatValue"
@@ -1066,6 +1069,7 @@ paths:
         in: "path"
         required: true
         type: "string"
+        x-internal: true
         x-exportParamName: "Uuid"
       - name: "singleNested.name"
         in: "query"
@@ -1544,6 +1548,7 @@ paths:
         in: "query"
         required: false
         type: "string"
+        x-internal: true
         x-exportParamName: "Uuid"
         x-optionalDataType: "String"
       - name: "bytesValue"
@@ -1733,6 +1738,7 @@ paths:
         in: "path"
         required: true
         type: "string"
+        x-internal: true
         x-exportParamName: "Uuid"
       - in: "body"
         name: "body"
@@ -2203,6 +2209,7 @@ paths:
         in: "path"
         required: true
         type: "string"
+        x-internal: true
         x-exportParamName: "AbeUuid"
       - in: "body"
         name: "body"
@@ -2251,6 +2258,7 @@ paths:
         in: "path"
         required: true
         type: "string"
+        x-internal: true
         x-exportParamName: "AbeUuid"
       - in: "body"
         name: "body"
@@ -2649,6 +2657,7 @@ paths:
         in: "path"
         required: true
         type: "string"
+        x-internal: true
         x-exportParamName: "AbeUuid"
       - in: "body"
         name: "body"
@@ -2785,6 +2794,7 @@ definitions:
         type: "string"
         minLength: 1
         pattern: "[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}"
+        x-internal: true
       nested:
         type: "array"
         items:
@@ -2919,6 +2929,7 @@ definitions:
     example:
       int64_value: 12
       double_value: 12.3
+    x-a-bit-of-everything-foo: "bar"
   examplepbABitOfEverythingRepeated:
     type: "object"
     properties:
@@ -3334,6 +3345,7 @@ definitions:
     example:
       int64_value: 12
       double_value: 12.3
+    x-a-bit-of-everything-foo: "bar"
 externalDocs:
   description: "More about gRPC-Gateway"
   url: "https://github.com/grpc-ecosystem/grpc-gateway"

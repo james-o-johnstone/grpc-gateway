@@ -147,6 +147,8 @@ type openapiParameterObject struct {
 	// Or you can explicitly refer to another type. If this is defined all
 	// other fields should be empty
 	Schema *openapiSchemaObject `json:"schema,omitempty"`
+
+	extensions []extension
 }
 
 // core part of schema, which is common to itemsObject and schemaObject.
@@ -265,6 +267,8 @@ type openapiSchemaObject struct {
 	MaxProperties    uint64   `json:"maxProperties,omitempty"`
 	MinProperties    uint64   `json:"minProperties,omitempty"`
 	Required         []string `json:"required,omitempty"`
+
+	extensions []extension
 }
 
 // http://swagger.io/specification/#definitionsObject

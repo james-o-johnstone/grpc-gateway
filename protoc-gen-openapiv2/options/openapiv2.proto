@@ -385,6 +385,7 @@ message Schema {
   // A free-form property to include an example of an instance for this schema in JSON.
   // This is copied verbatim to the output.
   string example = 6;
+  map<string, google.protobuf.Value> extensions = 7;
 }
 
 // `JSONSchema` represents properties from JSON Schema taken, and as used, in
@@ -505,6 +506,7 @@ message JSONSchema {
   reserved 43 to 45;
   // Items in `enum` must be unique https://tools.ietf.org/html/draft-fge-json-schema-validation-00#section-5.5.1
   repeated string enum = 46;
+  map<string, google.protobuf.Value> extensions = 47;
 }
 
 // `Tag` is a representation of OpenAPI v2 specification's Tag object.
